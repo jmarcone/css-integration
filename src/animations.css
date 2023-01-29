@@ -1,0 +1,46 @@
+/* We assign unblur animation to h1 and h2 elements */
+button:hover {
+  /*
+    - animation-name 
+    - animation-duration 
+    - animation-timing-function
+    - animation-delay     
+    - animation-iteration-count 
+    - animation-fill-mode:
+    */
+  animation: unblur 3s ease 1s infinite alternate;
+}
+
+/*
+    Keyframe definition 
+    
+    This custom keyframe rule named “unblur” will change the appearance of a text: 
+    it will start with a faint text-shadow value and finish in more intense one.
+    This is the custom animation that we will use inside the animation property 
+*/
+@keyframes unblur {
+  from {
+    box-shadow: 0 0 0 #c0c0c0;
+  }
+  to {
+    box-shadow: 2px 2px 50px #414288;
+  }
+}
+
+/* A helper class to apply the animation */
+.slideIn {
+  animation: slideIn 2s ease-in 1s;
+}
+
+/* 
+    this simple animation named "slideIn" will start an element on a displaced X value
+    and finish on their normal position 
+ */
+@keyframes slideIn {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

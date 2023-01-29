@@ -1,0 +1,183 @@
+/* Apply Roboto Font  */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #deefb7;
+}
+
+/**
+    Headers 
+*/
+h1,
+h2 {
+  font-weight: 400;
+  text-align: center;
+  color: #98dfaf;
+}
+
+h1 {
+  font-size: 8vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+/* links on all site */
+a {
+  color: #5fb49c;
+}
+
+a:hover,
+a:visited {
+  color: #414288;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+  background-color: #98dfaf;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  width: 80%;
+}
+
+.nav-right ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* links in nav-bar */
+.nav-right a {
+  font-style: normal;
+  font-size: larger;
+  text-decoration: none;
+  color: #414288;
+  text-transform: uppercase;
+}
+
+.nav-right a:visited {
+  color: #5fb49c;
+}
+
+.nav-right a:hover {
+  color: #5fb49c;
+  text-shadow: 1px 1px #682d63;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  margin: 5em;
+}
+
+/* Main */
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* Duck */
+#duck {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 5em;
+}
+
+#duck .text p {
+  text-shadow: #fc0 1px 0 10px;
+}
+
+.duck,
+.duck img {
+  max-width: 10em;
+}
+
+/* Emergency */
+
+#emergency {
+  margin: 5em;
+}
+
+#emergency h2 {
+  margin-bottom: 0.5em;
+}
+
+#emergency .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  margin: 0 auto;
+}
+
+#emergency .grid-item {
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  margin: 5em auto;
+  max-width: 1024px;
+}
+
+#contact h2 {
+  margin-bottom: 1vh;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  margin: 0 5em;
+}
+
+#contact form > *:not(button) {
+  background-color: #98dfaf;
+}
+
+#contact form > *:not(button):focus {
+  background-color: #5fb49c;
+}
+
+#contact form button {
+  border-radius: 10px;
+  font-size: 2vw;
+  background-color: #98dfaf;
+  color: #414288;
+  padding: 5px;
+}
+
+#contact form button:hover {
+  color: #98dfaf;
+  background-color: #414288;
+  cursor: pointer;
+}
+
+/* Footer */
+footer .github-logo img {
+  width: 64px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background-color: #98dfaf;
+}

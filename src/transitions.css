@@ -1,0 +1,10 @@
+/* Define transition values  for transform property changes */
+
+.duck img{
+    transition: transform 0.5s ease-in;
+}
+
+/* We scale the duck to double size */
+.duck img:hover{
+    transform: scale(2);
+}
