@@ -1,4 +1,4 @@
-/* We assign unblur animation to h1 and h2 elements */
+/* We assign unblur animation to button's hover  */
 button:hover {
   /*
     - animation-name 
@@ -8,7 +8,7 @@ button:hover {
     - animation-iteration-count 
     - animation-fill-mode:
     */
-  animation: unblur 3s ease 1s infinite alternate;
+  animation: alternateShadow 3s ease 1s infinite alternate;
 }
 
 /*
@@ -18,7 +18,7 @@ button:hover {
     it will start with a faint text-shadow value and finish in more intense one.
     This is the custom animation that we will use inside the animation property 
 */
-@keyframes unblur {
+@keyframes alternateShadow {
   from {
     box-shadow: 0 0 0 #c0c0c0;
   }
